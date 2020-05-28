@@ -1,6 +1,12 @@
+@import './fonts.css';
+
 body{
     max-width: 1920px;
     margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
 }
 
 .header_navbar{
@@ -10,7 +16,7 @@ body{
 
 .header_wrapper{
     height: 768px;
-    background: url('./assets/sean-pollock-203658-unsplash.png'), linear-gradient(180deg, rgba(0, 78, 134, 0.8) 0%, rgba(10, 65, 104, 0.8) 100%);
+    background: url('./assets/sean-pollock-203658-unsplash.png'), linear-gradient(180deg, rgba(0, 78, 134, 0.8) 0%,rgba(10, 65, 104, 0.8) 100%);
     background-blend-mode: multiply;
     position: relative;
 }
@@ -41,7 +47,57 @@ body{
 }
 
 .header_navbar-right-email{
-    margin-right: 130px;
+    padding-left: 50px;
+    margin-right: 172px;
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    height: 31px;
+}
+
+.header_navbar-right-email>span{
+    opacity: .5;
+}
+
+.header_navbar-right-email>div{
+    margin-top: 8px;
+}
+
+.header_navbar-right-email>div>a{
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    line-height: 12px;
+    text-align: right;
+    letter-spacing: -0.5px;
+    color: #FEE040;
+}
+
+.header_navbar-right-email>div>img{
+    margin-right: 15px;
+}
+
+.header_navbar-right-phone{
+    text-align: end;
+}
+
+.header_navbar-right-phone>span{
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    line-height: 12px;
+    text-align: right;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.header_navbar-right-phone>div>a{
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #FFFFFF;
 }
 
 .header_content-wrapper{
@@ -49,7 +105,7 @@ body{
     border-right: 1px solid rgba(255, 255, 255, .2);
     border-left: 1px solid rgba(255, 255, 255, .2);
     margin: 0 auto;
-    width: 1420px;
+    max-width: 1420px;
 }
 .header_content-main{
     display: flex;
@@ -175,6 +231,7 @@ body{
 }
 
 .main-why_me-left_column-text-title{
+    margin-top: -60px;
     font-family: 'Gilroy';
     font-size: 32px;
     line-height: 42px;
@@ -183,6 +240,7 @@ body{
 }
 
 .main-why_me-left_column-text-content{
+    margin-top: 50px;
     font-family: 'Proxima Nova';
     font-size: 18px;
     line-height: 28px;
@@ -198,6 +256,10 @@ body{
     background-color: rgb(245, 245, 245);
 }
 
+.main-why_me-right_column-wrapper{
+    margin-left: -25px;
+}
+
 .main-why_me-right_column-list_item{
     font-family: 'Proxima Nova';
     font-size: 18px;
@@ -205,9 +267,13 @@ body{
     letter-spacing: -0.5px;
     color: #333333;
     opacity: 0.7;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .main-why_me-right_column-list_head{
+    margin-bottom: 20px;
     font-family: 'Proxima Nova';
     font-size: 24px;
     line-height: 34px;
@@ -226,6 +292,7 @@ body{
     height: 753px;
     background: url('./assets/main/services/patrick-tomasso-89367-unsplash.png'),  linear-gradient(180deg, rgba(0, 78, 134, 0.9) 0%, rgba(10, 65, 104, 0.9) 100%);
     background-blend-mode: multiply;
+    padding: 0 20px;
 }
 
 .main-service__text{
@@ -257,8 +324,9 @@ body{
 
 .main-service__slider{
     display: flex;
-    padding: 0 250px;
+    padding: 0 120px;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .main-service__slider::-webkit-scrollbar{
@@ -266,7 +334,351 @@ body{
 }
 
 .main-service__slider-slide{
+    position: relative;
     margin-top: 50px;
+    margin-right: 80px;
     width: 400px;
     height: 381px;
+}
+
+.main-service__slider-slide-title{
+    font-family: 'Proxima Nova';
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    margin-top: 27px;
+}
+
+.main-service__slider-slide-text{
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-top: 18px;
+}
+
+.main-service__slider-slide-more_inform{
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 7px;
+    color: #FEE040;
+    text-transform: uppercase;
+    bottom: 0;
+    position: absolute;
+}
+
+.steps-header{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.steps-header_title{
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg,rgba(96, 182, 255, 1) 0%, rgba(0, 78, 134, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.steps-header_text{
+    width: 600px;
+    margin-top: 37px;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #505050;
+}
+
+.steps-step_1{
+    height: 441px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.steps-step_1-image{
+    width: 50%;
+    background-image: url('./assets/main/steps/step_1/henry-co-180108-unsplash.png');
+}
+
+.steps-step_1-content{
+    width: 50%;
+}
+
+.steps-step_1-content-head_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 425px;
+}
+
+.steps-step_1-content-head_title-step{
+    width: 107px;
+    height: 27px;
+    background: #FEE040;
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #151515;
+    position: relative;
+}
+
+.steps-step_1-content-head_title-name{
+    font-family: 'Proxima Nova';
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    color: #151515;
+}
+
+.steps-step_1-content-head{
+    margin-top: 75px;
+    margin-left: 70px;
+}
+
+.steps-step_1-content-head_text{
+    width: 460px;
+    margin-top: 20px;
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: #333333;
+    opacity: 0.7;
+}
+
+.steps-step_1-content-comment{
+    display: flex;
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+.steps-step_1-content-comment-image{
+    margin-right: 30px;
+}
+
+.steps-step_1-content-comment-image>img{
+    border-radius: 50%;
+    border: 7px solid white;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.steps-step_1-content-comment-text{
+    width: 401px;
+}
+
+.steps-step_1-content-comment-text-content{
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: #505050;
+    opacity: 0.7;
+}
+.steps-step_1-content-comment-text-author{
+    margin-top: 17px;
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: #151515;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1400px) {
+    .main-why_me-central_image{
+        display: none;
+    }
+
+    .header_navbar-content-bottom_list{
+        flex-direction: column;
+        margin-top: 80px;
+        margin-left: 130px;
+        padding: 0;
+    }
+
+    .header_navbar-right-email>div>img{
+        display: none;
+    }
+
+    .header_navbar-item-left{
+        margin-left: 100px;   
+    }
+    .header_navbar-content-bottom_list-item{
+        margin-top: 20px;
+    }
+    .header_navbar-item-right{
+        margin-right: 100px
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .steps-step_1-content{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .steps-step_1{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .steps-step_1-image{
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 441px;
+    }
+    
+    .header_navbar-right-email{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .header_content-main_title{
+        width: 480px;
+    }
+
+    .header_navbar-item-right{
+        display: none;
+    }
+
+    .header_content-main{
+        flex-direction: column;
+    }
+
+    .header_content-main{
+        padding: 0;
+    }
+
+    .header_navbar-content-bottom_video{
+        display: none;
+    }
+
+    .main-why_me-text{
+        flex-direction: column;
+    }
+
+    .main-why_me-text>div{
+        width: auto;
+        height: 220px;
+    }
+
+    .main-why_me-left_column-text{
+        height: auto;
+    }
+
+    .main-service__text-content{
+        text-align: center;
+    }
+    .main-service__slider{
+        padding: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width: 420px){
+    .header_navbar-item-left{
+        margin-left: 30px;
+    }
+
+    .header_navbar-left-logo{
+        margin-left: 50px;
+    }
+
+    .header_content-main_title{
+        width: auto;
+        height: auto;
+        padding-left: 10px;
+    }
+
+    .header_navbar-content-bottom_list{
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .main-why_me-left_column{
+        height: 250px;
+    }
+
+    .main-why_me-left_column-text{
+        margin: 0;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: auto;
+        padding-left: 5px;
+    }
+
+    .main-service__text{
+        padding: 20px 0 ;
+    }
+
+    .main-service__slider{
+        padding: 0;
+    }
+    
+    .main-services{
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .steps-header_title{
+        font-size: 40px;
+    }
+
+    .steps-header_text{
+        width: 100%;
+    }
+
+    .steps-step_1-content{
+        padding: 20px 5px;
+        height: 300px;
+    }
+
+    .steps-step_1-content-head{
+        margin: 0;
+    }
+
+    .steps-step_1-content-head_title{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .steps-step_1-content-comment-image{
+        display: none;
+    }
+
+    .steps-step_1-content-comment{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .steps-step_1-content-head_text{
+        width: 360px;
+    }
 }

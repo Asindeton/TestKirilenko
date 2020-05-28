@@ -1,0 +1,14 @@
+@font-face{
+    font-family: "Proxima Nova";
+    src: url('./assets/fonts/proxima_nova.ttf');
+}
+
+@font-face{
+    font-family: "Gilroy";
+    src: url('./assets/fonts/Gilroy.otf');
+}
+
+@font-face{
+    font-family: "Bebas Neue";
+    src: url('./assets/fonts/Bebas_Neue.ttf');
+}
