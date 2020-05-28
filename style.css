@@ -649,6 +649,10 @@ a{
         padding-left: 5px;
     }
 
+    .main-service__text-content{
+        font-size: 25px;
+    }
+
     .main-service__text{
         padding: 20px 0 ;
     }
