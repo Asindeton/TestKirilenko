@@ -560,6 +560,14 @@ a{
     .header_navbar-right-email{
         margin-right: 50px;
     }
+    .header_content-main_button{
+        margin: 0;
+        margin-top: 10px;
+    }
+    .main-why_me-left_column-text-title{
+        margin: 0;
+    }
+
 }
 
 @media screen and (max-width: 930px){
@@ -589,11 +597,11 @@ a{
 
     .main-why_me-text>div{
         width: auto;
-        height: 220px;
+        height: 340px;
     }
 
     .main-why_me-left_column-text{
-        height: auto;
+        height: 300px;
     }
 
     .main-service__text-content{
@@ -601,6 +609,9 @@ a{
     }
     .main-service__slider{
         padding: 0 20px;
+    }
+    .main-why_me-right_column-wrapper{
+        margin-left: 0;
     }
     
 }
@@ -626,7 +637,7 @@ a{
     }
 
     .main-why_me-left_column{
-        height: 250px;
+        height: 240px;
     }
 
     .main-why_me-left_column-text{
