@@ -135,6 +135,11 @@ a{
     opacity: 0.7;
 }
 
+.header_content-main_button{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
 .header_navbar-content-bottom_button{
     width: 340px;
     height: 70px;
